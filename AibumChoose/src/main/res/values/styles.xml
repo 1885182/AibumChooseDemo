@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="Universal.Widget.ProgressBar" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/uvv_progress_rotate</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:progressDrawable">@drawable/uvv_loading_progress_seek</item>
+    </style>
+
+    <declare-styleable name="CropImageView">
+        <attr name="cropMaskColor" format="color" />
+        <attr name="cropBorderColor" format="color" />
+        <attr name="cropBorderWidth" format="dimension" />
+        <attr name="cropFocusWidth" format="dimension" />
+        <attr name="cropFocusHeight" format="dimension" />
+        <attr name="cropStyle" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <style name="NoTitle_FullScreen" parent="Theme.AppCompat.Light.NoActionBar"> <!--自定义主题名称-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="backgroundColor">#000000</item>
+    </style>
+
+    <style name="ImageViewerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/ivColorPrimaryDark</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/ivWindowBackground</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ivTextColor</item>
+
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.ren.newalbumchoose.weight.SquareLayout
+        android:id="@+id/choose_item_video_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/choose_item_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_default_album"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/choose_item_videoPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/chat_msg_video_play_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/choose_item_video_square"
+            app:layout_constraintEnd_toEndOf="@+id/choose_item_video_square"
+            app:layout_constraintStart_toStartOf="@+id/choose_item_video_square"
+            app:layout_constraintTop_toTopOf="@+id/choose_item_video_square" />
+    </com.ren.newalbumchoose.weight.SquareLayout>
+
+    <ImageView
+        android:id="@+id/choose_item_video_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/choose_item_video_square"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@null"
+        android:clickable="false"
+        android:src="@mipmap/choose_image_no"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_item_video_square"
+        app:layout_constraintEnd_toEndOf="@+id/choose_item_video_square" />
+
+    <TextView
+        android:id="@+id/choose_item_video_mb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingBottom="2dp"
+        android:text="13MB"
+        android:textColor="#190c0a"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

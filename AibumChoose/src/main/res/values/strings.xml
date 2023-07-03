@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">社会治理</string>
+    <!--  permission -->
+    <string name="picker_str_camera_permission">您拒绝了拍照权限，如拒绝设置会导致该功能无法使用!是否前去设置？</string>
+    <string name="picker_str_storage_permission">您拒绝了存储权限，如拒绝设置会导致该功能无法使用!是否前去设置？</string>
+    <string name="picker_str_permission_refuse_setting">拒绝设置</string>
+    <string name="picker_str_permission_go_setting">前去设置</string>
+</resources>

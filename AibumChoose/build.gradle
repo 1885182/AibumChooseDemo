@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'maven-publish'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+
+}
+
+//新添加的
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.ren.newalbumchoose' // 这是需要打包的Module的包名，根据需要更换
+                artifactId = 'final' //多模块打包时用到，只打包一个Module用不到
+                version = '1.0.0'
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(path: ':proxy_cache')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.glide.glide
+    implementation rootProject.ext.glide.compiler
+    implementation rootProject.ext.dependencies.appcompat
+    implementation rootProject.ext.dependencies.permissionx
+    implementation rootProject.ext.dependencies.lib_crop
+    implementation rootProject.ext.dependencies.material
+    implementation rootProject.ext.dependencies.kotlin
+    implementation rootProject.ext.dependencies.constraintlayout
+    implementation rootProject.ext.dependencies.photoView
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+
+    implementation project(path: ':compress')
+}
+

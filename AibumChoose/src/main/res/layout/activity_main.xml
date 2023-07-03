@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    tools:context="com.ren.newalbumchoose.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="模式："
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/choice_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/single"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/singleChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="多选" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频："
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/show_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/show"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/showAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示全部" />
+
+            <RadioButton
+                android:id="@+id/showPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仅图片" />
+
+            <RadioButton
+                android:id="@+id/showVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仅视频" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/picker_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择照片" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

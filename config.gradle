@@ -1,0 +1,108 @@
+ext {
+    // false: 组件模式
+    // true ：集成模式
+    //isModule = true
+    isModule = false
+    android = [
+            compileSdkVersion: 33,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 32,
+            versionCode      : 1,
+            versionName      : "1.0",
+            appId            : "com.sszt.cdslpetitionletter"
+    ]
+
+    moduleId = [
+            "map"        : "com.sszt.baidumap",
+            "login"      : "com.sszt.login",
+            "home"       : "com.sszt.home",
+            "mine"       : "com.sszt.mine",
+            "smsGet"     : "com.sszt.informationacquisition",
+            "workManager": "com.sszt.workmanager",
+            "cameravideo": "com.sszt.cameravideo",
+            "partybuild" : "com.sszt.partybuild",
+    ]
+
+
+    dependencies = [
+            "kotlin"               : 'org.jetbrains.kotlin:kotlin-stdlib:1.5.20',
+            "core"                 : 'androidx.core:core-ktx:1.3.1',
+            "coroutinesCore"       : 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2',
+            "coroutinesAndroid"    : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2',
+            "annotation"           : 'androidx.annotation:annotation:1.1.0',
+            "appcompat"            : 'androidx.appcompat:appcompat:1.2.0',
+            "material"             : 'com.google.android.material:material:1.3.0',
+            "legacySupport"        : 'androidx.legacy:legacy-support-v4:1.0.0',
+            "cardview"             : 'androidx.cardview:cardview:1.0.0',
+            "constraintlayout"     : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            "fragment"             : 'androidx.fragment:fragment-ktx:1.2.5',
+//            "livedata"             : 'com.kunminx.archi:unpeek-livedata:4.4.1-beta1',
+            "livedata"             : 'com.kunminx.arch:unpeek-livedata:6.1.0-beta1',
+            "baseAdapterHelper"    : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4',
+            //微信开源项目，替代SP
+            "mmkv"                 : 'com.tencent:mmkv-static:1.2.10',
+            //界面状态库
+            "loadsir"              : 'com.kingja.loadsir:loadsir:1.3.8',
+            "multidex"             : 'androidx.multidex:multidex:2.0.0',
+            //万能工具类
+//            "utilcodex"            : 'com.blankj:utilcodex:1.30.6',
+            //流布局
+            "flexbox"              : 'com.google.android:flexbox:2.0.1',
+            //防崩溃
+            "customactivityoncrash": 'cat.ereza:customactivityoncrash:2.3.0',
+            //权限请求
+            "permissionx"          : 'com.permissionx.guolindev:permissionx:1.4.0',
+            "webSocket"            : 'org.java-websocket:Java-WebSocket:1.5.1',
+            "toast"                : 'com.hjq:toast:8.8',
+            "calendarview"         : 'com.haibin:calendarview:3.7.0',
+//            "recyclerviewx"        : 'com.yanzhenjie.recyclerview:x:1.3.2',
+            "dialogX"              : 'com.github.kongzue.DialogX:DialogX:0.0.39',
+            "androidAutoSize"      : 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1',
+            "androidPickerView"    : 'com.contrarywind:Android-PickerView:4.1.9',
+            "immersionbar"         : 'com.gyf.immersionbar:immersionbar:3.0.0',
+            "MagicIndicator"       : 'com.github.hackware1993:MagicIndicator:1.7.0',
+            "refreshLayoutKernel"  : 'com.scwang.smart:refresh-layout-kernel:2.0.3',
+            "refreshHeader"        : 'com.scwang.smart:refresh-header-classics:2.0.1',
+            "refreshFooter"        : 'com.scwang.smart:refresh-footer-classics:2.0.1',
+            "eventbus"             : 'org.greenrobot:eventbus:3.2.0',
+            "crash"                : 'cat.ereza:customactivityoncrash:2.3.0',
+            "photoView"            : 'com.github.chrisbanes:PhotoView:2.3.0',
+            "lib_crop"             : 'com.soundcloud.android.crop:lib_crop:1.0.0',
+            "zxing_lite"           : 'com.github.jenly1314:zxing-lite:2.1.1',
+            "navigation_fragment"  : 'androidx.navigation:navigation-fragment:2.3.5'
+    ]
+
+    def lifecycleVersion = "2.2.0"
+    lifecycle = [
+            "runtime"   : "androidx.lifecycle:lifecycle-runtime-ktx:${lifecycleVersion}",
+            "common"    : "androidx.lifecycle:lifecycle-common-java8:${lifecycleVersion}",
+            "extensions": "androidx.lifecycle:lifecycle-extensions:${lifecycleVersion}",
+            "viewmodel" : "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleVersion}",
+            "livedata"  : "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleVersion}"
+    ]
+
+    def retrofit2Version = "2.9.0"
+    retrofit2 = [
+            "retrofit"  : "com.squareup.retrofit2:retrofit:${retrofit2Version}",
+            "gson"      : "com.squareup.retrofit2:converter-gson:${retrofit2Version}",
+            "cookieJar" : 'com.github.franmontiel:PersistentCookieJar:v1.0.1',
+            "urlManager": "me.jessyan:retrofit-url-manager:1.4.0",
+    ]
+
+    def glideVersion = "4.12.0"
+    glide = [
+            "glide"   : "com.github.bumptech.glide:glide:${glideVersion}",
+            // annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+            "compiler": "com.github.bumptech.glide:compiler:${glideVersion}"
+    ]
+
+    def arouterVersion = "1.5.2"
+    arouter = [
+            "arouter" : "com.alibaba:arouter-api:${arouterVersion}",
+            //kapt 'com.alibaba:arouter-compiler:1.5.2'
+            "compiler": "com.alibaba:arouter-compiler:${arouterVersion}"
+    ]
+
+
+}
