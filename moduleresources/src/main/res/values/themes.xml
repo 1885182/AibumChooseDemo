@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="submitBtn">
+        <item name="android:background">@drawable/login_btn_bg2</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/dp_37</item>
+        <item name="android:layout_marginEnd">@dimen/dp_37</item>
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">提交</item>
+    </style>
+
+    <style name="submitBtn3">
+        <item name="android:background">@drawable/login_btn_bg3</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/dp_37</item>
+        <item name="android:layout_marginEnd">@dimen/dp_37</item>
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">特殊呈报</item>
+    </style>
+  <style name="linearLayoutBgStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="workSearchStyle">
+        <item name="android:hint">搜索</item>
+        <item name="android:background">@drawable/work_search_bg</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/color_c1bfbf</item>
+        <item name="android:textColorHint">@color/color_c1bfbf</item>
+        <item name="android:layout_marginStart">@dimen/dp_15</item>
+        <item name="android:layout_marginEnd">@dimen/dp_15</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_height">@dimen/dp_35</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:drawableStart">@mipmap/work_search</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:paddingEnd">@dimen/dp_10</item>
+    </style>
+
+
+
+    <style name="tipTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/color_030303</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <array name="SpinnerArray">
+        <item>全部</item>
+        <item>未开始</item>
+        <item>进行中</item>
+        <item>未审核</item>
+        <item>已驳回</item>
+        <item>已完成</item>
+    </array>
+</resources>

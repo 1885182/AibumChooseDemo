@@ -24,3 +24,4 @@ include ':compress'
 include ':basis'//基础包
 include ':pickerview'
 include ':wheelview'
+include ':moduleresources'
