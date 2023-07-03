@@ -1,0 +1,24 @@
+/**
+* word-break: break-all;  强制换行
+*/
+html {
+ }
+
+div{
+	 word-break: break-all;
+}
+p{
+	 word-break: break-all;
+}
+
+table{
+	width: 100%;
+	word-break: break-all;
+}
+
+body{
+ 	margin: 0;
+	padding: 0;
+	width: 100%;
+	word-break: break-all;
+}

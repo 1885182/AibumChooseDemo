@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogCenterAnimator">
+        <item name="android:windowEnterAnimation">@anim/anim_center_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_center_out</item>
+    </style>
+
+    <style name="DialogBottomAnimator" parent="android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_out</item>
+    </style>
+
+    <!-- 圆角图片  app:shapeAppearanceOverlay="@style/roundedCornerImageStyle"-->
+    <style name="roundedCornerImageStyle5">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+    </style>
+
+    <!-- 圆角图片  app:shapeAppearanceOverlay="@style/roundedCornerImageStyle"-->
+    <style name="roundedCornerImageStyle4">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="roundedCornerImageStyle2">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">2dp</item>
+    </style>
+
+    <!-- 圆形图片 -->
+    <style name="circleImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="background">@color/tr</item>
+    </style>
+
+
+    <!-- 切角图片 -->
+
+    <!-- 菱形图片 -->
+
+    <!-- 左上角90度扇形图片 -->
+
+    <!-- 火箭头图片 -->
+
+    <!-- 水滴 -->
+
+    <!-- 叶子图片 -->
+
+    <!-- tip图片 -->
+
+    <style name="DialogActStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--是否悬浮在activity上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--透明是否-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+         <!--设置没有窗口标题、dialog标题等各种标题-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:title">@null</item>
+        <item name="android:dialogTitle">@null</item>
+    </style>
+
+</resources>

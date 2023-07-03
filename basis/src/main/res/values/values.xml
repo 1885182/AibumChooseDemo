@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DialogFragmentNavigator">
+        <attr name="android:name" />
+    </declare-styleable>
+    <declare-styleable name="FragmentNavigator">
+        <attr name="android:name" />
+    </declare-styleable>
+    <declare-styleable name="NavHostFragment">
+        <attr name="defaultNavHost" format="boolean" />
+    </declare-styleable>
+    <!-- 跑马灯-->
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvLineSpacing" format="float|reference" />
+        <attr name="mvMaxLins" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+        <attr name="mvSingleLine" format="boolean" />
+        <attr name="mvGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0" />
+            <enum name="top_to_bottom" value="1" />
+            <enum name="right_to_left" value="2" />
+            <enum name="left_to_right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--输入框-->
+    <declare-styleable name="EditLayout">
+        <attr name="tvColor" format="color|reference" />
+        <attr name="tvName" format="string" />
+        <attr name="tvSize" format="dimension" />
+
+        <attr name="tvBackgroundColor" format="color|reference" />
+        <attr name="tvMargin" format="dimension|reference" />
+        <attr name="tvMarginTop" format="dimension|reference" />
+        <attr name="tvMarginLeft" format="dimension|reference" />
+        <attr name="tvMarginRight" format="dimension|reference" />
+        <attr name="tvMarginBottom" format="dimension|reference" />
+
+        <attr name="tvPadding" format="dimension|reference" />
+        <attr name="tvPaddingTop" format="dimension|reference" />
+        <attr name="tvPaddingLeft" format="dimension|reference" />
+        <attr name="tvPaddingRight" format="dimension|reference" />
+        <attr name="tvPaddingBottom" format="dimension|reference" />
+
+        <attr name="etColor" format="color|reference" />
+        <attr name="etName" format="string" localization="suggested" />
+        <attr name="etHint" format="string" />
+        <attr name="etSize" format="dimension" />
+        <attr name="etInputType">
+            <!-- There is no content type.  The text is not editable. -->
+            <flag name="none" value="0x00000000" />
+            <!-- Just plain old text.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_NORMAL}. -->
+            <flag name="text" value="0x00000001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 request capitalization of all characters.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_CHARACTERS}. -->
+            <flag name="textCapCharacters" value="0x00001001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 request capitalization of the first character of every word.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_WORDS}. -->
+            <flag name="textCapWords" value="0x00002001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 request capitalization of the first character of every sentence.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_SENTENCES}. -->
+            <flag name="textCapSentences" value="0x00004001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 request auto-correction of text being input.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_AUTO_CORRECT}. -->
+            <flag name="textAutoCorrect" value="0x00008001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 specify that this field will be doing its own auto-completion and
+                 talking with the input method appropriately.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_AUTO_COMPLETE}. -->
+            <flag name="textAutoComplete" value="0x00010001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 allow multiple lines of text in the field.  If this flag is not set,
+                 the text field will be constrained to a single line.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_MULTI_LINE}. -->
+            <flag name="textMultiLine" value="0x00020001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 indicate that though the regular text view should not be multiple
+                 lines, the IME should provide multiple lines if it can.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_IME_MULTI_LINE}. -->
+            <flag name="textImeMultiLine" value="0x00040001" />
+            <!-- Can be combined with <var>text</var> and its variations to
+                 indicate that the IME should not show any
+                 dictionary-based word suggestions.  Corresponds to
+                 {@link android.text.InputType#TYPE_TEXT_FLAG_NO_SUGGESTIONS}. -->
+            <flag name="textNoSuggestions" value="0x00080001" />
+            <!-- Text that will be used as a URI.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_URI}. -->
+            <flag name="textUri" value="0x00000011" />
+            <!-- Text that will be used as an e-mail address.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_EMAIL_ADDRESS}. -->
+            <flag name="textEmailAddress" value="0x00000021" />
+            <!-- Text that is being supplied as the subject of an e-mail.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_EMAIL_SUBJECT}. -->
+            <flag name="textEmailSubject" value="0x00000031" />
+            <!-- Text that is the content of a short message.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_SHORT_MESSAGE}. -->
+            <flag name="textShortMessage" value="0x00000041" />
+            <!-- Text that is the content of a long message.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_LONG_MESSAGE}. -->
+            <flag name="textLongMessage" value="0x00000051" />
+            <!-- Text that is the name of a person.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_PERSON_NAME}. -->
+            <flag name="textPersonName" value="0x00000061" />
+            <!-- Text that is being supplied as a postal mailing address.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_POSTAL_ADDRESS}. -->
+            <flag name="textPostalAddress" value="0x00000071" />
+            <!-- Text that is a password.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_PASSWORD}. -->
+            <flag name="textPassword" value="0x00000081" />
+            <!-- Text that is a password that should be visible.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_VISIBLE_PASSWORD}. -->
+            <flag name="textVisiblePassword" value="0x00000091" />
+            <!-- Text that is being supplied as text in a web form.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_EDIT_TEXT}. -->
+            <flag name="textWebEditText" value="0x000000a1" />
+            <!-- Text that is filtering some other data.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_FILTER}. -->
+            <flag name="textFilter" value="0x000000b1" />
+            <!-- Text that is for phonetic pronunciation, such as a phonetic name
+                 field in a contact entry.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_PHONETIC}. -->
+            <flag name="textPhonetic" value="0x000000c1" />
+            <!-- Text that will be used as an e-mail address on a web form.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS}. -->
+            <flag name="textWebEmailAddress" value="0x000000d1" />
+            <!-- Text that will be used as a password on a web form.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_TEXT} |
+                 {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_PASSWORD}. -->
+            <flag name="textWebPassword" value="0x000000e1" />
+            <!-- A numeric only field.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_VARIATION_NORMAL}. -->
+            <flag name="number" value="0x00000002" />
+            <!-- Can be combined with <var>number</var> and its other options to
+                 allow a signed number.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_FLAG_SIGNED}. -->
+            <flag name="numberSigned" value="0x00001002" />
+            <!-- Can be combined with <var>number</var> and its other options to
+                 allow a decimal (fractional) number.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_FLAG_DECIMAL}. -->
+            <flag name="numberDecimal" value="0x00002002" />
+            <!-- A numeric password field.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+                 {@link android.text.InputType#TYPE_NUMBER_VARIATION_PASSWORD}. -->
+            <flag name="numberPassword" value="0x00000012" />
+            <!-- For entering a phone number.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_PHONE}. -->
+            <flag name="phone" value="0x00000003" />
+            <!-- For entering a date and time.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+                 {@link android.text.InputType#TYPE_DATETIME_VARIATION_NORMAL}. -->
+            <flag name="datetime" value="0x00000004" />
+            <!-- For entering a date.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+                 {@link android.text.InputType#TYPE_DATETIME_VARIATION_DATE}. -->
+            <flag name="date" value="0x00000014" />
+            <!-- For entering a time.  Corresponds to
+                 {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+                 {@link android.text.InputType#TYPE_DATETIME_VARIATION_TIME}. -->
+            <flag name="time" value="0x00000024" />
+        </attr>
+        <attr name="etMaxLines" format="integer|reference" />
+
+        <attr name="etMaxLength" format="integer" min="0" />
+        <attr name="etMsg" format="string|reference" />
+        <attr name="etFocusable" format="boolean" />
+        <attr name="etDigits" format="string" />
+
+        <attr name="etBackgroundColor" format="color|reference" />
+        <attr name="etMargin" format="dimension|reference" />
+        <attr name="etMarginTop" format="dimension|reference" />
+        <attr name="etMarginLeft" format="dimension|reference" />
+        <attr name="etMarginRight" format="dimension|reference" />
+        <attr name="etMarginBottom" format="dimension|reference" />
+
+        <attr name="etPadding" format="dimension|reference" />
+        <attr name="etPaddingTop" format="dimension|reference" />
+        <attr name="etPaddingLeft" format="dimension|reference" />
+        <attr name="etPaddingRight" format="dimension|reference" />
+        <attr name="etPaddingBottom" format="dimension|reference" />
+
+
+    </declare-styleable>
+
+    <!--标题栏-->
+    <declare-styleable name="TitleLayout">
+        <attr name="title_text" format="string|reference" />
+        <attr name="title_text_size" format="dimension" />
+        <attr name="title_text_color" format="color|reference" />
+
+        <attr name="title_right_text" format="string|reference" />
+        <attr name="title_text_right_size" format="dimension" />
+        <attr name="title_text_right_color" format="color|reference" />
+        <attr name="title_text_right_visibility" format="boolean" />
+        <attr name="title_text_right_pic" format="reference|color" />
+        <attr name="title_bg" format="reference|color" />
+
+        <attr name="title_back" format="integer|reference" />
+        <attr name="title_back_visibility" format="boolean" />
+        <attr name="title_back_click" format="string" />
+
+        <attr name="title_right_iv" format="integer|reference" />
+        <attr name="title_right_iv_visibility" format="boolean" />
+    </declare-styleable>
+    <!--会弹出toast的EditView-->
+    <declare-styleable name="EditTipView">
+        <attr name="msg" format="string|reference" />
+        <attr name="etTipFocusable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableLinearLayout">
+        <!--默认显示的条目数-->
+        <attr name="defaultItemCount" format="integer" />
+        <!--提示文字的大小-->
+        <attr name="tipTextSize" format="dimension" />
+        <!--字体颜色-->
+        <attr name="tipTextColor" format="color" />
+        <!--待展开的文字提示-->
+        <attr name="expandText" format="string" />
+        <!--待收起时的文字提示-->
+        <attr name="hideText" format="string" />
+        <!--向下的箭头的图标-->
+        <attr name="arrowDownImg" format="reference" />
+        <!--是否使用默认的底部-->
+        <attr name="useDefaultBottom" format="boolean" />
+    </declare-styleable>
+ 
+
+
+
+</resources>

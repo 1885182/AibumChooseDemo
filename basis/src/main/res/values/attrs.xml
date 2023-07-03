@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="YTextSize" format="dimension" />
+    <attr name="YTextRightMargin" format="dimension" />
+    <attr name="YTextColor" format="color" />
+    <attr name="XTextSize" format="dimension" />
+    <attr name="XTextTopMargin" format="dimension" />
+    <attr name="XTextColor" format="color" />
+    <attr name="FormLineColor" format="color" />
+    <attr name="LineTextSize" format="dimension" />
+    <attr name="LineTextBottomMargin" format="dimension" />
+    <attr name="LineTextColor" format="color" />
+    <attr name="LineColor" format="color" />
+    <attr name="ContentBgColor" format="color" />
+    <attr name="DotRadius" format="dimension" />
+    <attr name="DotColor" format="color" />
+    <attr name="BarTopTextSize" format="dimension" />
+    <attr name="BarTopTextBottomMargin" format="dimension" />
+    <attr name="BarTopTextColor" format="color" />
+    <attr name="BarRadius" format="dimension" />
+    <attr name="BarColor" format="color" />
+
+
+    <declare-styleable name="BarChartView">
+        <attr name="YTextSize" />
+        <attr name="YTextRightMargin" />
+        <attr name="YTextColor" />
+        <attr name="XTextSize" />
+        <attr name="XTextTopMargin" />
+        <attr name="XTextColor" />
+        <attr name="FormLineColor" />
+        <attr name="BarTopTextSize" />
+        <attr name="BarTopTextBottomMargin" />
+        <attr name="BarTopTextColor" />
+        <attr name="BarRadius" />
+        <attr name="BarColor" />
+        <attr name="isShowBarTopText" format="boolean" />
+        <attr name="strFormat" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LineChartView">
+        <attr name="YTextSize" />
+        <attr name="YTextRightMargin" />
+        <attr name="YTextColor" />
+        <attr name="XTextSize" />
+        <attr name="XTextTopMargin" />
+        <attr name="XTextColor" />
+        <attr name="LineTextSize" />
+        <attr name="LineTextBottomMargin" />
+        <attr name="LineTextColor" />
+        <attr name="LineColor" />
+        <attr name="ContentBgColor" />
+        <attr name="DotRadius" />
+        <attr name="DotColor" />
+        <attr name="FormLineColor" />
+    </declare-styleable>
+
+    <declare-styleable name="CurveChartView">
+        <attr name="YTextSize" />
+        <attr name="YTextRightMargin" />
+        <attr name="YTextColor" />
+        <attr name="XTextSize" />
+        <attr name="XTextTopMargin" />
+        <attr name="XTextColor" />
+        <attr name="LineTextSize" />
+        <attr name="LineTextBottomMargin" />
+        <attr name="LineTextColor" />
+        <attr name="LineColor" />
+        <attr name="ContentBgColor" />
+        <attr name="DotRadius" />
+        <attr name="DotColor" />
+        <attr name="FormLineColor" />
+    </declare-styleable>
+
+    <declare-styleable name="PieChartView">
+        <attr name="PieRadius" format="dimension" />
+        <attr name="TextSize" format="dimension" />
+        <attr name="TextTopMargin" format="dimension" />
+        <attr name="PieTextSize" format="dimension" />
+        <attr name="PieTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RotateTextView">
+        <attr name="TVDegree" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlantedTextView">
+        <!--文字大小-->
+        <attr name="slantedTextSize" format="dimension" />
+        <!--文字超出长度是否截取-->
+        <attr name="isSub" format="boolean" />
+        <!--文字最大长度-->
+        <attr name="maxTextLength" format="integer" />
+        <!--背景-->
+        <attr name="slantedBackgroundColor" format="color" />
+        <!--文字-->
+        <attr name="slantedText" format="string" />
+        <!--文字颜色-->
+        <attr name="slantedTextColor" format="color" />
+        <!--背景宽度-->
+        <attr name="slantedLength" format="dimension" />
+        <!--位置及样式-->
+        <attr name="slantedMode" format="enum">
+            <!-- 标签的位置-->
+            <enum name="left" value="0"></enum>
+            <enum name="right" value="1"></enum>
+            <enum name="left_bottom" value="2"></enum>
+            <enum name="right_bottom" value="3"></enum>
+            <!--三角形，脚上也会充满-->
+            <enum name="left_triangle" value="4"></enum>
+            <enum name="right_triangle" value="5"></enum>
+            <enum name="left_bottom_triangle" value="6"></enum>
+            <enum name="right_bottom_triangle" value="7"></enum>
+        </attr>
+    </declare-styleable>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

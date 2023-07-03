@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapSelectActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapSelectMap"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mapTrajectoryMarket"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/center_loc"
+        app:layout_constraintBottom_toBottomOf="@+id/mapSelectMap"
+        app:layout_constraintEnd_toEndOf="@+id/mapSelectMap"
+        app:layout_constraintStart_toStartOf="@+id/mapSelectMap"
+        app:layout_constraintTop_toTopOf="@+id/mapSelectMap" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapSelectMap">
+
+        <EditText
+            android:id="@+id/gaoMapSelectSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:background="@drawable/r40_cf2f4f6_shape"
+            android:drawableStart="@mipmap/seace"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_15"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_c1bfbf"
+            android:textSize="@dimen/sp_14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mapSelectRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gaoMapSelectFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_3"
+        android:padding="@dimen/dp_12"
+        android:src="@mipmap/close_cha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gaoMapSelectOk"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_33"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:background="@drawable/r6_c3292ff_shape"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titleFL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/titleRL"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/titleBack"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/h_ripple"
+            android:padding="15dp"
+            android:tint="@color/black"
+            android:src="@drawable/ic_back"
+            android:visibility="gone"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/titleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:maxLength="20"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="标题" />
+
+        <TextView
+            android:id="@+id/titleRightText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:paddingEnd="14dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="右边文字" />
+
+        <ImageView
+            android:id="@+id/titleRightImg"
+            android:layout_width="?android:actionBarSize"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/load_empty"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</FrameLayout>

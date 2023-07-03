@@ -11,8 +11,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AibumChoose" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/basis" />
             <option value="$PROJECT_DIR$/compress" />
+            <option value="$PROJECT_DIR$/pickerview" />
             <option value="$PROJECT_DIR$/proxy_cache" />
+            <option value="$PROJECT_DIR$/wheelview" />
           </set>
         </option>
       </GradleProjectSettings>
