@@ -31,7 +31,6 @@ import com.sszt.basis.map.util.BaiduMapUtil
 import com.sszt.basis.ext.init
 import com.sszt.basis.ext.view.textStringTrim
 import com.sszt.basis.util.StatusBar
-import com.sszt.resources.IRoute
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -44,7 +43,7 @@ import kotlin.collections.ArrayList
  * @param author Meng
  *
  */
-@Route(path = IRoute.map_select)
+@Route(path = "/map/select")
 class MapSelectActivity : AppCompatActivity() {
 
     @JvmField

@@ -13,7 +13,6 @@ import com.alibaba.android.arouter.launcher.ARouter
 import com.blankj.utilcode.util.ActivityUtils
 import com.blankj.utilcode.util.SPUtils
 import com.hjq.toast.ToastUtils
-import com.sszt.resources.IRoute
 import java.io.Serializable
 import java.util.*
 
@@ -25,7 +24,7 @@ fun Activity.toast(msg: String, isShow: Boolean = true) {
     if (msg == "TOKEN超期" || msg == "登录身份过期，请重新登陆") {
         SPUtils.getInstance().clear()
         ActivityUtils.finishAllActivities()
-        router(IRoute.login_login)
+        router("/login/login")
     }
 }
 
@@ -37,7 +36,7 @@ fun Fragment.toast(msg: String, isShow: Boolean = true) {
     if (msg == "TOKEN超期" || msg == "登录身份过期，请重新登陆") {
         SPUtils.getInstance().clear()
         ActivityUtils.finishAllActivities()
-        router(IRoute.login_login)
+        router("/login/login")
     }
 }
 

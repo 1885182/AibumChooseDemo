@@ -19,7 +19,6 @@ import com.kongzue.dialogx.interfaces.DialogLifecycleCallback
 import com.ren.newalbumchoose.weight.SeeMultiPicture
 import com.sszt.basis.callback.livedata.StringLiveData
 import com.sszt.basis.ext.util.loge
-import com.sszt.resources.IRoute
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
@@ -86,7 +85,7 @@ fun Activity.errorDialog(msg: String?) {
     if (msg == "TOKEN超期") {
         SPUtils.getInstance().clear()
         ActivityUtils.finishAllActivities()
-        router(IRoute.login_login)
+        router("/login/login")
     }
 
 
@@ -97,7 +96,7 @@ fun Fragment.errorDialog(msg: String?) {
     if (msg == "TOKEN超期") {
         SPUtils.getInstance().clear()
         ActivityUtils.finishAllActivities()
-        router(IRoute.login_login)
+        router("/login/login")
     }
 }
 

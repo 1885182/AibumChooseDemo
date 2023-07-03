@@ -26,7 +26,6 @@ import com.permissionx.guolindev.PermissionX
 import com.sszt.basis.R
 import com.sszt.basis.ext.router
 import com.sszt.basis.map.util.BaiduMapUtil
-import com.sszt.resources.IRoute
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -67,7 +66,7 @@ class BaiduMapMainActivity : AppCompatActivity(), SensorEventListener {
         requestPermission()
 
         findViewById<Button>(R.id.mapSelectLoc).setOnClickListener {
-            router(IRoute.map_select)
+            router("/map/select")
         }
 
         //判断是否打开通知权限

@@ -12,10 +12,9 @@ import com.sszt.basis.R
 import com.sszt.basis.map.util.BaiduMapUtil
 import com.sszt.basis.util.StatusBar
 import com.sszt.basis.weight.TitleLayout
-import com.sszt.resources.IRoute
 
 
-@Route(path = IRoute.map_show_loc)
+@Route(path = "/map/selectShowLoc")
 class ShowLocActivity : AppCompatActivity() {
 
     @JvmField
