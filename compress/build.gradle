@@ -22,7 +22,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'top.zibin.lubans' // 这是需要打包的Module的包名，根据需要更换
                 //artifactId = 'final' //多模块打包时用到，只打包一个Module用不到
-                version = '1.1.8'
+                version = '1.1.9'
             }
         }
     }
